@@ -1,15 +1,10 @@
 package com.codiub.hr_payroll.service;
 
-import com.codiub.hr_payroll.config.WorkerFeignClient;
+import com.codiub.hr_payroll.feignclient.WorkerFeignClient;
 import com.codiub.hr_payroll.entity.Payment;
 import com.codiub.hr_payroll.entity.Worker;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Service
 public class PaymentService {
